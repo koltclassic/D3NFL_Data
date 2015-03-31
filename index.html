@@ -58,7 +58,7 @@
         .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      d3.csv("DemarcoMurray2014Stats.csv", function (error, data) {
+      d3.csv("MurrayStats.csv", function (error, data) {
 
         var labelVar = 'Week';
         var varNames = d3.keys(data[0]).filter(function (key) { return key != labelVar;});
